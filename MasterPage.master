@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table align="center" style="width:1024px; height:700px;">
+            <tr style="height:100px;">
+                <td style="text-align: center; font-weight: 700px; font-style: italic; font-size: xx-large; background-color: #0099FF">Medicare Medical Store</td>
+            </tr>
+            <tr style="height:40px;">
+                <td>
+                <ul id="menu">
+                    <li><a href="Default.aspx">Home</a></li>
+                    <li><a href="about.aspx">AboutUs</a></li>
+                    <li><a href="sevices.aspx">Services</a></li>
+                    <li><a href="medicines.aspx">Medicines</a></li>
+                    <li><a href="contact.aspx">ContactUs</a></li>
+                </ul>
+                </td>
+            </tr>
+            <tr style="height:400px; vertical-align:top;">
+                <td>
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr style="height:30px;">
+                <td style="font-weight: 700px; text-align: center; font-size: large; background-color: #0099FF;">copyright &copy; 2022<br />by. Yashvi Patel.</td>
+            </tr>
+        </table>
+        </div>
+    </form>
+</body>
+</html>
